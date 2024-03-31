@@ -202,7 +202,7 @@ header .container {
 }
 
 .navbar {
-  position: absolute;
+  position: fixed;
   top: calc(100% - 15px);
   left: 15px;
   right: 15px;
