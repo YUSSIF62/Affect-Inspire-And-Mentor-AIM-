@@ -166,9 +166,14 @@ body {
 \*-----------------------------------*/
 
 header {
-  position: relative;
-  padding: 35px 0;
-  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding-block: 15px;
+  border-block-end: 1px solid var(--cultured);
+  z-index: 4;
 }
 
 header .container {
