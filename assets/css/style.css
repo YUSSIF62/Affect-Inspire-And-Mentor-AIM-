@@ -326,7 +326,7 @@ body {
 .hero {
   padding-block-start: calc(var(--section-padding) + 50px);
   text-align: center;
-  background-color: rgb(3, 41, 3);
+  background-color: #135D66;
   color: white;
 }
 
@@ -363,7 +363,7 @@ body {
 .service .section-text { margin-block: 5px 35px; }
 
 .service-card {
-  background-color: rgb(2, 66, 2);
+  background-color: #135D66;
   color: white;
   padding: 20px 15px;
   border: 1px solid var(--platinum);
