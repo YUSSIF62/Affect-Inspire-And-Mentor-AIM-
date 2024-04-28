@@ -410,19 +410,22 @@
       <!-- 
         - #CTA
       -->
-
       <section class="section cta" aria-label="cta" style="background-image: url('./assets/images/cta-bg.jpg')">
         <div class="container">
-
-          <p class="cta-subtitle">So What is Next?</p>
-
-          <h2 class="h2 section-title">Are You Ready? Let's get to Work!</h2>
-
-          <a href="#" class="btn btn-secondary">Get Started</a>
-
+          <p class="cta-subtitle">Do you want to support?</p>
+          <h2 class="h2 section-title">Are You Ready? Click to Donate!</h2>
+          <a href="#" id="donateBtn" class="btn btn-secondary">Donate</a>
+          <div class="bankDetails" style="display: none;">
+            <p class="cta-subtitle"><strong>Account Name:</strong> GBAMARA RICHARD</p>
+            <p class="cta-subtitle"><strong>Bank Name:</strong> Ecobank Ghana</p>
+            <p class="cta-subtitle"><strong>Account Number:</strong> 2441002201588</p>
+            <p class="cta-subtitle"><strong>Swift Code:</strong> ECOCGHAC</p>
+            <p class="cta-subtitle"><strong>Bank Address:</strong> 2 Morocco Lane, Off Independence Ave.</p>
+          </div>
         </div>
       </section>
-
+      
+      
 
 
 
@@ -692,6 +695,18 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+  <script>
+    document.getElementById("donateBtn").addEventListener("click", function(event) {
+  event.preventDefault(); // Prevent the default behavior of the anchor tag
+  var bankDetails = document.querySelector(".bankDetails");
+  if (bankDetails.style.display === "none" || bankDetails.style.display === "") {
+    bankDetails.style.display = "block";
+  } else {
+    bankDetails.style.display = "none";
+  }
+});
+
+  </script>
 </body>
 
 </html>
