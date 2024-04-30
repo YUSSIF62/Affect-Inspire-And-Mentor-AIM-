@@ -1179,3 +1179,45 @@ textarea.input-field {
   .contact-card .card-icon { padding: 15px; }
 
 }
+
+/**
+ * responsive for smaller than 575px screen
+ */
+ @media (max-width: 575px) {
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container {
+    max-width: 100%;
+    padding-inline: 20px;
+  }
+
+  .grid-list {
+    grid-template-columns: 1fr;
+    column-gap: 15px;
+  }
+
+  /**
+   * BLOG
+   */
+
+  .blog .grid-list { grid-template-columns: 1fr; }
+
+  .blog-card.grid {
+    display: block;
+  }
+
+  /**
+   * CONTACT
+   */
+
+  .input-wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-item { min-width: 100%; }
+
+}
