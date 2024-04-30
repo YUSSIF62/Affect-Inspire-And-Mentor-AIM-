@@ -159,7 +159,11 @@ body {
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 15px; }
+.container {
+  max-width: 100%;
+  padding-inline: 20px;
+}
+
 
 .btn {
   max-width: max-content;
@@ -215,6 +219,12 @@ body {
   display: grid;
   gap: 30px;
 }
+
+.grid-list {
+  grid-template-columns: 1fr;
+  column-gap: 15px;
+}
+
 
 .img-holder {
   aspect-ratio: var(--width) / var(--height);
